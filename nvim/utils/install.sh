@@ -65,16 +65,6 @@ installcocextensions() { \
   sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
-cloneconfig() { \
-  echo "Cloning Nvim Mach 2 configuration"
-  git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
-}
-
-moveoldnvim() { \
-  echo "Moving your config to nvim.old"
-  mv $HOME/.config/nvim $HOME/.config/nvim.old
-}
-
 moveoldcoc() { \
   echo "Moving your coc to coc.old"
   mv $HOME/.config/coc $HOME/.config/coc.old
@@ -148,13 +138,13 @@ which node > /dev/null && echo "node installed, moving on..." || asktoinstallnod
 pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
 
 # move old nvim directory if it exists
-[ -d "$HOME/.config/nvim" ] && moveoldnvim
+# [ -d "$HOME/.config/nvim" ] && moveoldnvim
 
-# move old nvim directory if it exists
-[ -d "$HOME/.config/coc" ] && moveoldcoc
+# move old coc directory if it exists
+ [ -d "$HOME/.config/coc" ] && moveoldcoc
 
 # clone config down
-cloneconfig
+# cloneconfig
 
 # echo "Nvim Mach 2 is better with at least ripgrep, ueberzug and ranger"
 # echo -n "Would you like to install these now?  (y/n)? "
