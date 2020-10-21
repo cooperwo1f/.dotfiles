@@ -13,7 +13,7 @@ mkdir -p $CONFIGDIR
 
 for i in $linkFiles; do
   echo "moving $i"
-  mv -i $BASEDIR/$i $CONFIGDIR/$i
+  mv -i $BASEDIR/$i $CONFIGDIR/$i/
 done
 
 echo "linking .bashrc"
