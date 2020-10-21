@@ -22,4 +22,4 @@ ln -s -v -i $CONFIGDIR/bash/bashrc $HOME/.bashrc
 echo "linking .vim"
 ln -s -v -i $CONFIGDIR/vim $HOME/.vim
 
-rm -r $BASEDIR
+rm -rf $BASEDIR
