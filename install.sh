@@ -17,11 +17,12 @@ fi
 mkdir -p $CONFIGDIR
 
 for i in $linkFiles; do
-  mv -i -v $BASEDIR/$i $CONFIGDIR/
 
   if [ $1 = 'clean' ]; then
     rm -r -f $CONFIGDIR/$i
   fi
+  
+  mv -i -v $BASEDIR/$i $CONFIGDIR/
 
 done
 
