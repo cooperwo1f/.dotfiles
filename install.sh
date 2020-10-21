@@ -12,8 +12,7 @@ linkFiles=`find $BASEDIR/* -maxdepth 0 -type d -exec realpath --relative-to=$BAS
 mkdir -p $CONFIGDIR
 
 for i in $linkFiles; do
-  echo "moving $i"
-  mv -i $BASEDIR/$i $CONFIGDIR/$i/
+  mv -i -v $BASEDIR/$i $CONFIGDIR/
 done
 
 echo "linking .bashrc"
@@ -22,4 +21,4 @@ ln -s -v -i $CONFIGDIR/bash/bashrc $HOME/.bashrc
 echo "linking .vim"
 ln -s -v -i $CONFIGDIR/vim $HOME/.vim
 
-rm -rf $BASEDIR
+rm -r -f $BASEDIR
