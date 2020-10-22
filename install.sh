@@ -7,34 +7,40 @@ echo "homepath = $HOME"
 echo "basedir = $BASEDIR"
 echo "configdir = $CONFIGDIR"
 
-linkFiles=`find $BASEDIR/* -maxdepth 0 -type d -exec realpath --relative-to=$BASEDIR {} \;`
+linkFolders=`find $BASEDIR/* -maxdepth 0 -type d -exec realpath --relative-to=$BASEDIR {} \;`
+linkFiles=`find $BASEDIR/. -maxdepth 1 -type f -name ".[^.]*" -exec realpath --relative-to=$BASEDIR {} \;`
 
-
-if [ $1 = 'clean' ]; then
+if [ "$1" = "clean" ]; then
   echo "doing clean install"
 fi
 
 mkdir -p $CONFIGDIR
 
-for i in $linkFiles; do
-
-  if [ $1 = 'clean' ]; then
+echo "linking folders"
+for i in $linkFolders; do
+  if [ "$1" = "clean" ]; then
+    echo "removing folders"
     rm -r -f $CONFIGDIR/$i
   fi
   
-  mv -i -v $BASEDIR/$i $CONFIGDIR/
+  ln -s -v -i $BASEDIR/$i $CONFIGDIR/
 
 done
 
-if [ $1 = 'clean' ]; then
-  rm -r -f $HOME/.bashrc
-  rm -r -f $HOME/.vim
-fi
+echo "linking files"
+for i in $linkFiles; do
+  if [ "$i" = ".gitignore" ]; then
+    continue
+  fi
 
-echo "linking .bashrc"
-ln -s -v -i $CONFIGDIR/bash/bashrc $HOME/.bashrc
+  if [ "$1" = "clean" ]; then
+    echo "removing files"
+    rm -r -f $HOME/$i
+  fi
+  
+  mv -v -i $BASEDIR/$i $HOME/
 
-echo "linking .vim"
-ln -s -v -i $CONFIGDIR/vim $HOME/.vim
+done
 
-rm -r -f $BASEDIR
+echo "installing nvim"
+sh $HOME/.config/nvim/utils/install.sh
