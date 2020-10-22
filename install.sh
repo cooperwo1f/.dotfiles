@@ -19,7 +19,6 @@ mkdir -p $CONFIGDIR
 echo "linking folders"
 for i in $linkFolders; do
   if [ "$1" = "clean" ]; then
-    echo "removing folders"
     rm -r -f $CONFIGDIR/$i
   fi
   
@@ -34,7 +33,6 @@ for i in $linkFiles; do
   fi
 
   if [ "$1" = "clean" ]; then
-    echo "removing files"
     rm -r -f $HOME/$i
   fi
   
