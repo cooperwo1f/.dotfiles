@@ -138,7 +138,7 @@ pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || 
 # [ -d "$HOME/.config/nvim" ] && moveoldnvim
 
 # move old coc directory if it exists
- [ -d "$HOME/.config/coc" ] && moveoldcoc
+# [ -d "$HOME/.config/coc" ] && moveoldcoc
 
 # clone config down
 # cloneconfig
