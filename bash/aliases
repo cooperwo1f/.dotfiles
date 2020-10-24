@@ -1,0 +1,12 @@
+alias cp='cp -i'
+alias df='df -h'
+alias free='free -m'
+alias more=less
+
+alias l='ls -l'
+alias ll='l -a'
+
+alias n='nvim'
+alias v='nvim'
+
+alias r='ranger'
