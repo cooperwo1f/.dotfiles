@@ -10,7 +10,7 @@ let g:startify_custom_header = [
 let g:startify_session_dir = '~/.config/nvim/session'
 
 let g:startify_commands = [
-          \ [ 'ScratchPad', 'edit ~/.config/nvim/utils/scratch.js | Codi' ]
+          \ [ 'ScratchPad', 'ene | Codi javascript' ]
           \ ]
 
 let g:startify_lists = [
