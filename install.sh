@@ -42,5 +42,7 @@ for i in $linkFiles; do
 
 done
 
-echo "installing nvim"
-sh $HOME/.config/nvim/utils/install.sh
+if [ "$1" = "clean" ]; then
+  echo "installing nvim"
+  sh $HOME/.config/nvim/utils/install.sh
+fi
