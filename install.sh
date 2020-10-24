@@ -3,6 +3,8 @@
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CONFIGDIR="$HOME/.config"
 
+sudo echo "got root"
+
 echo "homepath = $HOME"
 echo "basedir = $BASEDIR"
 echo "configdir = $CONFIGDIR"
@@ -36,7 +38,7 @@ for i in $linkFiles; do
     rm -r -f $HOME/$i
   fi
   
-  mv -v -i $BASEDIR/$i $HOME/
+  cp -v -i $BASEDIR/$i $HOME/
 
 done
 
