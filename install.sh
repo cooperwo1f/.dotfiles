@@ -45,4 +45,5 @@ done
 if [ "$1" = "clean" ]; then
   echo "installing nvim"
   sh $HOME/.config/nvim/utils/install.sh
+  sh $HOME/.config/rsnapshot/utils/install.sh
 fi
