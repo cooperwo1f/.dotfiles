@@ -1,0 +1,69 @@
+history: 10000
+
+background_opacity: 1
+
+style: Block
+
+shell:
+  program: /bin/bash
+
+window:
+  dimensions:
+    columns: 100
+    lines: 85
+
+  padding:
+    x: 3
+    y: 3
+
+  decorations: none
+  startup_mode: Maximized
+
+font:
+  normal:
+    family: Hack Nerd Font
+
+  size: 9.6
+
+  offset:
+    x: 0
+    y: 0
+
+colors:
+  # Default colors
+  primary:
+    background: "#10151a"
+    foreground: "#eceff1"
+
+  # Normal colors
+  normal:
+    black: "#384a54"
+    red: "#f66605"
+    green: "#305d87"
+    yellow: "#d2a700"
+    blue: "#007e8d"
+    magenta: "#c000c0"
+    cyan: "#247b68"
+    white: "#cfd8dc"
+
+  # Bright colors
+  bright:
+    black: "#4d6571"
+    red: "#f68300"
+    green: "#3b72a5"
+    yellow: "#ffc107"
+    blue: "#008fa0"
+    magenta: "#dc40dc"
+    cyan: "#30a58e"
+    white: "#eceff1"
+
+    # Dim colors
+  dim:
+    black: "#5f7c8a"
+    red: "#f6a248"
+    green: "#4382bc"
+    yellow: "#eabd00"
+    blue: "#00b8d0"
+    magenta: "#c056c0"
+    cyan: "#1dcbaa"
+    white: "#cfd8dc"
