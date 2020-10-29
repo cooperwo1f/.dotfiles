@@ -153,4 +153,7 @@ which nvim > /dev/null && installplugins
 
 installcocextensions
 
+$HOME/.config/nvim/autoload/plugged/nvcode.vim/generate $HOME/.config/nvim/utils/nvcode.yml > $HOME/.config/nvim/autoload/plugged/nvcode.vim/colors/nvcode.vim
+
+
 echo "install and activate a font from here: https://github.com/ryanoasis/nerd-fonts"
