@@ -4,7 +4,8 @@ alias free='free -m'
 alias more=less
 
 alias l='ls -l'
-alias ll='l -a'
+alias ll='l -A'
+alias la='l -a'
 
 alias n='nvim'
 alias v='nvim'
