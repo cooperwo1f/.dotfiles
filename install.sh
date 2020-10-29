@@ -28,7 +28,7 @@ for i in $linkFolders; do
 
 done
 
-echo "linking files"
+echo "copying files"
 for i in $linkFiles; do
   if [ "$i" = ".gitignore" ]; then
     continue
