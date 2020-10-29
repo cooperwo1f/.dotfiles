@@ -139,7 +139,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
     " Plug 'hardcoreplayers/spaceline.vim'
-    " Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline-themes'
     " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     " Plug 'arcticicestudio/nord-vim'
     " Ranger
