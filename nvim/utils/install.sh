@@ -124,6 +124,8 @@ installextrapackages() { \
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
 }
 
+echo "installing nvim"
+
 # install pip
 which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
 
