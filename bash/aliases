@@ -14,3 +14,6 @@ alias r='ranger'
 
 alias gs='git status'
 alias ga='git add .'
+alias gp='git pull'
+alias gpp='git push'
+alias gc='git commit -m' 
