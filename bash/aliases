@@ -8,6 +8,9 @@ alias ll='l -A'
 alias la='l -a'
 
 alias n='nvim'
-alias v='nvim'
+alias v='vim'
 
 alias r='ranger'
+
+alias gs='git status'
+alias ga='git add .'
