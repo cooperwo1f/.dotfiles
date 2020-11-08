@@ -1,4 +1,4 @@
-M smb://Cooper@192.168.1.100/CooperBackup/Linux/CoopMac/
+M /home/cooper
 P 
 S 0
 R 0
@@ -20,6 +20,7 @@ E /home/cooper/.config/coc
 E /home/cooper/.config/nvim
 E /home/cooper/.config/ranger
 E /home/cooper/.config/vim
+E /home/cooper/.local/share/Trash
 E /home/cooper/.npm
 E /var/cache
 E /var/lock
