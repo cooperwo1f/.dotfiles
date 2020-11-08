@@ -1,0 +1,27 @@
+M smb://Cooper@192.168.1.100/CooperBackup/Linux/CoopMac/
+P 
+S 0
+R 0
+F 1
+L 2020-11-09T02:03:08
+B 2020-11-09T02:03:08
+C 0
+Z 0
+I /etc
+I /home
+I /srv
+I /usr/local
+I /var
+E /home/cooper/.cache
+E /home/cooper/.config/.dotfiles
+E /home/cooper/.config/alacritty
+E /home/cooper/.config/bash
+E /home/cooper/.config/coc
+E /home/cooper/.config/nvim
+E /home/cooper/.config/ranger
+E /home/cooper/.config/vim
+E /home/cooper/.npm
+E /var/cache
+E /var/lock
+E /var/run
+E /var/spool
