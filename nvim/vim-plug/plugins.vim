@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Comments
-    "Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-commentary'
     " Change dates fast
     "Plug 'tpope/vim-speeddating'
     " Convert binary, hex, etc..
@@ -59,7 +59,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'tpope/vim-fugitive'
     "Plug 'tpope/vim-rhubarb'
     "Plug 'junegunn/gv.vim'
-    "Plug 'rhysd/git-messenger.vim'
+    Plug 'rhysd/git-messenger.vim'
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Start Screen
@@ -78,7 +78,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Debugging
     "Plug 'puremourning/vimspector'
     " Better tabline
-    "Plug 'mg979/vim-xtabline'
+    Plug 'mg979/vim-xtabline'
     " undo time travel
     "Plug 'mbbill/undotree'
     " Find and replace

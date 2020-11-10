@@ -32,20 +32,20 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ ':call Comment()'                    , 'comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                        , 'open init' ]
-let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]
+" let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                             , 'balance windows' ]
 let g:which_key_map['d'] = [ ':Bdelete'                           , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'               , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                             , 'split below']
-let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window' ]
-let g:which_key_map['n'] = [ ':let @/ = ""'                       , 'no highlight' ]
-let g:which_key_map['p'] = [ ':Files'                             , 'search files' ]
-let g:which_key_map['q'] = [ ':q!'                                  , 'quit' ]
-let g:which_key_map['r'] = [ ':RnvimrToggle'                      , 'ranger' ]
-let g:which_key_map['u'] = [ ':UndotreeToggle'                    , 'undo tree']
+" let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window' ]
+" let g:which_key_map['n'] = [ ':let @/ = ""'                       , 'no highlight' ]
+" let g:which_key_map['p'] = [ ':Files'                             , 'search files' ]
+let g:which_key_map['q'] = [ ':q!'                                , 'quit' ]
+let g:which_key_map['r'] = [ ':FloatermNew ranger'                , 'ranger' ]
+" let g:which_key_map['u'] = [ ':UndotreeToggle'                    , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                             , 'split right']
 let g:which_key_map['W'] = [ 'w'                                  , 'write' ]
-let g:which_key_map['z'] = [ 'Goyo'                               , 'zen' ]
+" let g:which_key_map['z'] = [ 'Goyo'                               , 'zen' ]
 
 " Group mappings
 
@@ -80,31 +80,6 @@ let g:which_key_map.b = {
       \ 'p' : ['bprevious' , 'previous-buffer'],
       \ '?' : ['Buffers'   , 'fzf-buffer'],
       \ }
-
-" f is for find and replace
-let g:which_key_map.f = {
-      \ 'name' : '+find & replace' ,
-      \ 'b' : [':Farr --source=vimgrep'    , 'buffer'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-      \ }
-
-" k is for task
-let g:which_key_map.k = {
-      \ 'name' : '+task' ,
-      \ 'c' : [':AsyncTask file-compile'      , 'compile file'],
-      \ 'b' : [':AsyncTask project-build'     , 'build project'],
-      \ 'e' : [':AsyncTaskEdit'               , 'edit local tasks'],
-      \ 'f' : [':AsyncTaskFzf'                , 'find task'],
-      \ 'g' : [':AsyncTaskEdit!'              , 'edit global tasks'],
-      \ 'h' : [':AsyncTaskList!'              , 'list hidden tasks'],
-      \ 'l' : [':CocList tasks'               , 'list tasks'],
-      \ 'm' : [':AsyncTaskMacro'              , 'macro help'],
-      \ 'o' : [':copen'                       , 'open task view'],
-      \ 'r' : [':AsyncTask file-run'          , 'run file'],
-      \ 'p' : [':AsyncTask project-run'       , 'run project'],
-      \ 'x' : [':cclose'                      , 'close task view'],
-      \ }
-      " \ 'l' : [':AsyncTaskList'               , 'list tasks'],
 
 " s is for search
 let g:which_key_map.s = {
@@ -173,19 +148,6 @@ let g:which_key_map.g = {
       \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
       \ 'v' : [':GV'                               , 'view commits'],
       \ 'V' : [':GV!'                              , 'view buffer commits'],
-      \ }
-
-let g:which_key_map.G = {
-      \ 'name' : '+gist' ,
-      \ 'a' : [':Gist -a'                          , 'post gist anon'],
-      \ 'b' : [':Gist -b'                          , 'post gist browser'],
-      \ 'd' : [':Gist -d'                          , 'delete gist'],
-      \ 'e' : [':Gist -e'                          , 'edit gist'],
-      \ 'l' : [':Gist -l'                          , 'list public gists'],
-      \ 's' : [':Gist -ls'                         , 'list starred gists'],
-      \ 'm' : [':Gist -m'                          , 'post gist all buffers'],
-      \ 'p' : [':Gist -P'                          , 'post public gist '],
-      \ 'P' : [':Gist -p'                          , 'post private gist '],
       \ }
 
 " l is for language server protocol
@@ -260,27 +222,6 @@ let g:which_key_map.T = {
       \ 'p' : [':tabprevious'             , 'prev tab'],
       \ 'P' : [':XTabMoveBufferPrev'      , '<-buffer'],
       \ 'x' : [':XTabPinBuffer'           , 'pin buffer'],
-      \ }
-
-" w is for wiki
-let g:which_key_map.w = {
-      \ 'name' : '+wiki' ,
-      \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
-      \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
-      \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
-      \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
-      \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
-      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
-      \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
-      \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
-      \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
-      \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
-      \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
-      \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
-      \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
-      \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
-      \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
-      \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
       \ }
 
 " Global
