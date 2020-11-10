@@ -29,6 +29,7 @@ else
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
+  source $HOME/.config/nvim/plug-config/vim-smoothie.vim
   source $HOME/.config/nvim/plug-config/vim-commentary.vim
   " source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
