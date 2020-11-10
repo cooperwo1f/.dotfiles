@@ -28,7 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Surround
     "Plug 'tpope/vim-surround'
     " Files
-    "Plug 'tpope/vim-eunuch'
+    Plug 'tpope/vim-eunuch'
     " Have the file system follow you around
     "Plug 'airblade/vim-rooter'
     " auto set indent settings
@@ -37,7 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'nvim-treesitter/nvim-treesitter'
     "Plug 'sheerun/vim-polyglot'
     " Cool Icons
-    "Plug 'ryanoasis/vim-devicons'
+    Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
     "Plug 'jiangmiao/auto-pairs'
     " Closetags
@@ -55,13 +55,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     "Plug 'junegunn/fzf.vim'
     " Git
-    "Plug 'airblade/vim-gitgutter'
+    Plug 'airblade/vim-gitgutter'
     "Plug 'tpope/vim-fugitive'
     "Plug 'tpope/vim-rhubarb'
     "Plug 'junegunn/gv.vim'
     "Plug 'rhysd/git-messenger.vim'
     " Terminal
-    "Plug 'voldikss/vim-floaterm'
+    Plug 'voldikss/vim-floaterm'
     " Start Screen
     Plug 'mhinz/vim-startify'
     " Vista
@@ -74,7 +74,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'honza/vim-snippets'
     "Plug 'mattn/emmet-vim'
     " Interactive code
-    "Plug 'metakirby5/codi.vim'
+    Plug 'metakirby5/codi.vim'
     " Debugging
     "Plug 'puremourning/vimspector'
     " Better tabline
