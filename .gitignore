@@ -1,5 +1,6 @@
 *node_modules/*
 vim/sessions/default.vim
+vim/.vimrc.swp
 kicad/*
 !kicad/eeschema
 !kicad/pcbnew
