@@ -1,2 +1,6 @@
 *node_modules/*
 vim/sessions/default.vim
+kicad/*
+!kicad/eeschema
+!kicad/pcbnew
+!kicad/footprint_editor
