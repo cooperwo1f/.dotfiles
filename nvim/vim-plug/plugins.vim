@@ -139,7 +139,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'arcticicestudio/nord-vim'
     " Ranger
     " Plug 'francoiscabrol/ranger.vim'
-    " Plug 'rbgrouleff/bclose.vim'
+    Plug 'rbgrouleff/bclose.vim'
     " Making stuff
     " Plug 'neomake/neomake'
     " Plug 'mhinz/vim-signify'
