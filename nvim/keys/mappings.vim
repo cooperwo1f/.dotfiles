@@ -26,8 +26,8 @@ else
   inoremap <expr> <c-k> ("\<C-p>")
 
   " I hate escape more than anything else
-  inoremap jk <Esc>
-  inoremap kj <Esc>
+  "inoremap jk <Esc>
+  "inoremap kj <Esc>
 
   " Easy CAPS
   " inoremap <c-u> <ESC>viwUi
