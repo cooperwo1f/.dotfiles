@@ -3,6 +3,8 @@ alias df='df -h'
 alias free='free -m'
 alias more=less
 
+alias c='cd'
+
 alias l='ls -l'
 alias ll='l -A'
 alias la='l -a'
