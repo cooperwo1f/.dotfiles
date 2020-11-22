@@ -45,6 +45,7 @@ let g:which_key_map['r'] = [ ':FloatermNew ranger'                , 'ranger' ]
 " let g:which_key_map['u'] = [ ':UndotreeToggle'                    , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                             , 'split right']
 let g:which_key_map['W'] = [ 'w'                                  , 'write' ]
+let g:which_key_map['n'] = [ ':nohlsearch'                        , 'no highlight' ]
 " let g:which_key_map['z'] = [ 'Goyo'                               , 'zen' ]
 
 " Group mappings
