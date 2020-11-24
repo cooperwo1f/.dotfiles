@@ -44,5 +44,5 @@ done
 
 if [ "$1" = "clean" ]; then
   sh $CONFIGDIR/nvim/utils/install.sh
-  sh $CONFIGDIR/rsnapshot/utils/install.sh
+  sh $CONFIGDIR/i3/utils/install.sh
 fi

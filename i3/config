@@ -44,7 +44,7 @@ no_focus [class="plasmashell" window_type="notification"]
 bindsym $mod+Shift+e exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
 
 # Set font
-font Hack:monospace 8
+font pango:monospace 8
 
 # Keybindings
 set $Mod Mod4
