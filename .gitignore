@@ -1,4 +1,5 @@
 *node_modules/*
+i3/background
 vim/sessions/default.vim
 vim/.vimrc.swp
 kicad/*
