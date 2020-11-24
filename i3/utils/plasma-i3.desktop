@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/plasma-i3.sh
+DesktopNames=KDE
+Name=i3
+Comment=Plasma w/i3
