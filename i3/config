@@ -1,13 +1,13 @@
 # Use v4 feature to stop i3 trying to run convert script
 workspace_layout default
 
-default_orientation horizontal
+default_orientation vertical
 
 # Kill default Plasma Desktop
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
 # Set the background
-exec --no-startup-id feh --bg-scale /home/cooper/.local/share/wallpapers/Starry\ Nebula\ 219.png
+exec --no-startup-id feh --bg-scale /home/cooper/.config/.dotfiles/i3/background
 
 # Remove the i3 bar
 bar {
