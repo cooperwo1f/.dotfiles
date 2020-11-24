@@ -1,7 +1,7 @@
 # Use v4 feature to stop i3 trying to run convert script
 workspace_layout default
 
-default_orientation vertical
+default_orientation horizontal
 
 # Kill default Plasma Desktop
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
