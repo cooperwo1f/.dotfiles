@@ -68,18 +68,6 @@ bindsym $Alt+Shift+l move right
 bindsym $Alt+Shift+h move left
 
 # Change focus (cursor keys)
-bindsym $Alt+Down focus down
-bindsym $Alt+Up focus up
-bindsym $Alt+Left focus left
-bindsym $Alt+Right focus right
-
-# Move focused window (cursor keys)
-bindsym $Alt+Shift+Down move down
-bindsym $Alt+Shift+Up move up
-bindsym $Alt+Shift+Left move left
-bindsym $Alt+Shift+Right move right
-
-# Change focus (cursor keys)
 bindsym $Mod+Down focus down
 bindsym $Mod+Up focus up
 bindsym $Mod+Left focus left
