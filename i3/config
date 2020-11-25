@@ -56,16 +56,16 @@ bindsym $Mod+Shift+c reload
 bindsym $Mod+Shift+r restart
 
 # Change focus
-bindsym $Alt+j focus up
-bindsym $Alt+k focus down
-bindsym $Alt+l focus right
-bindsym $Alt+h focus left
+bindsym $Mod+j focus up
+bindsym $Mod+k focus down
+bindsym $Mod+l focus right
+bindsym $Mod+h focus left
 
 # Move focused window
-bindsym $Alt+Shift+j move up
-bindsym $Alt+Shift+k move down
-bindsym $Alt+Shift+l move right
-bindsym $Alt+Shift+h move left
+bindsym $Mod+Shift+j move up
+bindsym $Mod+Shift+k move down
+bindsym $Mod+Shift+l move right
+bindsym $Mod+Shift+h move left
 
 # Change focus (cursor keys)
 bindsym $Mod+Down focus down
@@ -89,7 +89,7 @@ bindsym $Mod+a focus parent
 bindsym $Mod+d focus child
 
 # Horizontal split
-bindsym $Mod+h split h
+bindsym $Mod+b split h
 
 # Verticle split
 bindsym $Mod+v split v
