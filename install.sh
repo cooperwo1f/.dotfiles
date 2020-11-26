@@ -46,3 +46,6 @@ if [ "$1" = "clean" ]; then
   sh $CONFIGDIR/nvim/utils/install.sh
   sh $CONFIGDIR/i3/utils/install.sh
 fi
+
+echo "install background using this command"
+echo "cd i3; ln -s /path/to/background background"
