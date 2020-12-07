@@ -56,14 +56,14 @@ bindsym $Mod+Shift+c reload
 bindsym $Mod+Shift+r restart
 
 # Change focus
-bindsym $Mod+j focus up
-bindsym $Mod+k focus down
+bindsym $Mod+j focus down
+bindsym $Mod+k focus up
 bindsym $Mod+l focus right
 bindsym $Mod+h focus left
 
 # Move focused window
-bindsym $Mod+Shift+j move up
-bindsym $Mod+Shift+k move down
+bindsym $Mod+Shift+j move down
+bindsym $Mod+Shift+k move up
 bindsym $Mod+Shift+l move right
 bindsym $Mod+Shift+h move left
 

@@ -21,3 +21,5 @@ alias gpu='git push'
 alias gc='git commit -m' 
 alias gcl='git clone' 
 alias gco='git commit -m' 
+
+alias yay='yay --aur' 
