@@ -9,6 +9,9 @@ for_window [title="Desktop — Plasma"] kill; floating enable; border none
 # Set the background
 exec --no-startup-id feh --bg-scale /home/cooper/.config/.dotfiles/i3/background
 
+# Kill the splashscreen
+exec --no-startup-id pkill ksplashqml
+
 # Remove the i3 bar
 bar {
   mode hide
@@ -50,20 +53,23 @@ font pango:monospace 8
 set $Mod Mod4
 set $Alt Mod1
 
+# TODO: really want to bind $Mod to enable application menu
+# previous attempts broke other functionality when using shotcuts with $Mod
+
 bindsym $Mod+q split toggle; kill
 bindsym $Alt+F4 split toggle; kill
 bindsym $Mod+Shift+c reload
 bindsym $Mod+Shift+r restart
 
 # Change focus
-bindsym $Mod+j focus up
-bindsym $Mod+k focus down
+bindsym $Mod+j focus down
+bindsym $Mod+k focus up
 bindsym $Mod+l focus right
 bindsym $Mod+h focus left
 
 # Move focused window
-bindsym $Mod+Shift+j move up
-bindsym $Mod+Shift+k move down
+bindsym $Mod+Shift+j move down
+bindsym $Mod+Shift+k move up
 bindsym $Mod+Shift+l move right
 bindsym $Mod+Shift+h move left
 
