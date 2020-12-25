@@ -47,5 +47,8 @@ if [ "$1" = "clean" ]; then
   sh $CONFIGDIR/i3/utils/install.sh
 fi
 
+git update-index --skip-worktree $BASEDIR/kicad/eeschema
+git update-index --skip-worktree $BASEDIR/kicad/pcbnew
+
 echo "install background using this command"
 echo "cd i3; ln -s /path/to/background background"
